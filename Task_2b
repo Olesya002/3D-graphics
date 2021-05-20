@@ -1,0 +1,4 @@
+[x,y] = meshgrid(-10:0.09:10,-10:0.09:10);
+z = -x.*sin(x)-y.*cos(y);
+plot3(x,y,z);
+mesh(x,y,z);
