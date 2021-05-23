@@ -1,7 +1,7 @@
 t = 0:.005:6*pi;
 x = sin(t);
 y =2*cos(t);
-plot3(x,y,t);
+plot3(x,y,t,"b",'Linewidth',2);
 hold on
 grid on
 t0 = 7*pi/2;
@@ -14,9 +14,9 @@ z0 = 1;
 x2 = x1 + x0;
 y2 = y1 + y0;
 z2 = z1 + z0;
-line([x1,x2],[y1,y2],[z1,z2], "Color",'r');
+line([x1,x2],[y1,y2],[z1,z2], "Color",'r','Linewidth',2);
 x3 = x1 - x0;
 y3 = y1 - y0;
 z3 = z1 - z0;
-line([x1,x3],[y1,y3],[z1,z3], "Color",'r');
-plot3(x1,y1,z1,"r*");
+line([x1,x3],[y1,y3],[z1,z3], "Color",'r','Linewidth',2);
+plot3(x1,y1,z1,"r*",'Linewidth',2);
