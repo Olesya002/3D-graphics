@@ -4,3 +4,30 @@ a = 10;
 z = a.*x.*exp(-x.^2-y.^2);
 mesh(x,y,z);
 
+%d
+u1 = 0;
+u2 = 8;
+v1 = 0;
+v2 = 2*pi;
+N1 = 40;
+N2 = 40;
+u = linspace(u1,u2,N1);
+v = linspace(v1,v2,N2);
+[U,V] = meshgrid(u,v);
+a = 2; c = 1;
+x = a*sinh(U).*cos(V);
+y = a*sinh(U).*sin(V);
+z = c*cosh(U);
+surf(x,y,z);
+hold on
+surf(x,y,-z);
+
+%g
+clear;
+a = 60;
+b = 60;
+[u,v] = meshgrid(0:0.09:10,0:pi/15:2*pi);
+x = (a+b.*cos(v)).*cos(u);
+y = (a+b.*cos(v)).*sin(u);
+z = b.*sin(v);
+surf(x,y,z);
