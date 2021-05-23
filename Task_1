@@ -1,0 +1,7 @@
+clear
+a = input('a = ');
+b = input('b = ');
+c = input('c = ');
+d = input('d = ');
+Z = @(x,y)a.*x./c + b.*y./c + d./c;
+fsurf(Z, [-10, 10, -10, 10]);
